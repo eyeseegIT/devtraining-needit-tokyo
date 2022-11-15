@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_report_source">
+    <sys_report_source action="INSERT_OR_UPDATE">
+        <description/>
+        <display>ITIL users (mine) (Task)</display>
+        <filter table="task">assigned_to.roles=itil^opened_at&lt;=javascript:gs.beginningOfLast90Days()^opened_atNOTONLast 90 days@javascript:gs.beginningOfLast90Days()@javascript:gs.endOfLast90Days()<item endquery="false" field="assigned_to.roles" goto="false" newquery="false" operator="=" or="false" value="itil"/>
+            <item endquery="false" field="opened_at" goto="false" newquery="false" operator="&lt;=" or="false" value="javascript:gs.beginningOfLast90Days()"/>
+            <item endquery="false" field="opened_at" goto="false" newquery="false" operator="NOTON" or="false" value="Last 90 days@javascript:gs.beginningOfLast90Days()@javascript:gs.endOfLast90Days()"/>
+        </filter>
+        <name>ITIL users (mine)</name>
+        <sys_class_name>sys_report_source</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-14 21:13:29</sys_created_on>
+        <sys_id>52c6cd63074b91103277fd908c1ed03f</sys_id>
+        <sys_name>ITIL users (mine) (Task)</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_report_source_52c6cd63074b91103277fd908c1ed03f</sys_update_name>
+        <table>task</table>
+    </sys_report_source>
+</record_update>
